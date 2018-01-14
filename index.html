@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ilustrations</title>
+		<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+		<style>
+			html{
+				font-family: arial, sans-serif;
+			}
+			.contenedor{
+				width: 90%;
+				margin: 0 auto;
+				text-align: center;
+				/*background-color: green;*/
+				padding: 20px;
+			}
+			.titulo{
+				background-color: #3CB371;
+				color: white;
+				display: block;
+				padding: 10px;
+			}
+			.animaciones{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			.animacion{
+				box-shadow: 2px 2px 10px gray;
+				padding: 20px;
+				margin: 5px;
+				min-width: 300px;
+				max-width: 300px;
+				transition: 1s;
+			}
+			.animacion:hover{
+				background-color: #1E90FF;
+				color: white;
+				cursor: pointer;
+			}
+			.animacion:hover .autor{
+				color: black;
+			}
+			.animacion video{
+				width: 100%;
+			}
+			.autor{
+				text-align: right;
+				color: #808080;
+				transition: 1s;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="contenedor">
+			<h1 class="titulo">Portafolio de animaciones</h1>
+			<section class="animaciones">
+				<div class="animacion">
+					<h2>Trofeo</h2>
+					<video src="img/trofeo-2.mp4" loop="true" autoplay="true"></video>
+					<p class="autor">Anggy Arguello</p>
+				</div>
+				<div class="animacion">
+					<h2>Taza Cafe</h2>
+					<video src="img/taza-2.mp4" loop="true" autoplay="true"></video>
+					<p class="autor">Anggy Arguello</p>
+				</div>
+				<div class="animacion">
+					<h2>Globo</h2>
+					<video src="img/globo-2.mp4" loop="true" autoplay="true"></video>
+					<p class="autor">Anggy Arguello</p>
+				</div>
+
+			</section>
+		</div>
+	</body>
+</html>
